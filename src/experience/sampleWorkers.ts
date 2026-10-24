@@ -1,0 +1,18 @@
+import type { WorkerProfile, WorkerSettings } from './types';
+
+export const sampleWorkers: WorkerProfile[] = [
+    { id: 'maya', name: 'Maya Chen', initials: 'MC', skills: ['House moves', 'Furniture handling', 'Packing'], serviceAreas: ['North Park', 'Willow Lane'], hourlyRate: 32, verified: true, rating: 4.9, completedJobs: 86, availability: 'Sample availability', availableDays: ['Friday', 'Saturday', 'Sunday'], experienceYears: 6, bio: 'Careful with fragile items and apartment access.' },
+    { id: 'darnell', name: 'Darnell Brooks', initials: 'DB', skills: ['House moves', 'Furniture handling', 'Driving'], serviceAreas: ['North Park', 'Riverside'], hourlyRate: 35, verified: true, rating: 4.8, completedJobs: 112, availability: 'Sample availability', availableDays: ['Saturday'], experienceYears: 8, bio: 'Licensed driver and move lead for local homes.' },
+    { id: 'luis', name: 'Luis Ortega', initials: 'LO', skills: ['House moves', 'Furniture handling', 'Packing'], serviceAreas: ['Greenbank', 'North Park'], hourlyRate: 29, verified: false, rating: 4.7, completedJobs: 41, availability: 'Sample availability', availableDays: ['Saturday', 'Sunday'], experienceYears: 4, bio: 'Strong packer with furniture assembly experience.' },
+    { id: 'eli', name: 'Eli Turner', initials: 'ET', skills: ['House moves', 'Driving', 'Furniture handling'], serviceAreas: ['Riverside', 'North Park'], hourlyRate: 34, verified: true, rating: 4.8, completedJobs: 73, availability: 'Sample availability', availableDays: ['Friday', 'Saturday'], experienceYears: 7, bio: 'Experienced mover and local van driver.' },
+    { id: 'amara', name: 'Amara Okafor', initials: 'AO', skills: ['Paddy harvesting', 'Manual harvest', 'Produce sorting'], serviceAreas: ['Greenbank', 'River Valley'], hourlyRate: 22, verified: true, rating: 4.9, completedJobs: 64, availability: 'Sample availability', availableDays: ['Saturday', 'Sunday'], experienceYears: 7, bio: 'Paddy harvesting, field sorting, and wet-ground work.' },
+    { id: 'priya', name: 'Priya Nair', initials: 'PN', skills: ['Paddy harvesting', 'Manual harvest', 'Field lead'], serviceAreas: ['Greenbank', 'East Field'], hourlyRate: 25, verified: true, rating: 5.0, completedJobs: 93, availability: 'Sample availability', availableDays: ['Saturday'], experienceYears: 9, bio: 'Experienced field lead for small harvest teams.' },
+    { id: 'sana', name: 'Sana Rahman', initials: 'SR', skills: ['Paddy harvesting', 'Manual harvest', 'Produce sorting'], serviceAreas: ['Greenbank', 'River Valley'], hourlyRate: 21, verified: false, rating: 4.6, completedJobs: 29, availability: 'Sample availability', availableDays: ['Saturday'], experienceYears: 3, bio: 'Reliable manual harvest and sorting experience.' },
+    { id: 'esha', name: 'Esha Patel', initials: 'EP', skills: ['Paddy harvesting', 'Manual harvest', 'Field lead'], serviceAreas: ['Greenbank', 'East Field'], hourlyRate: 24, verified: true, rating: 4.8, completedJobs: 52, availability: 'Sample availability', availableDays: ['Saturday', 'Sunday'], experienceYears: 6, bio: 'Manual harvest specialist with wet-field safety experience.' },
+    { id: 'kofi', name: 'Kofi Mensah', initials: 'KM', skills: ['Paddy harvesting', 'Assisted harvest', 'Equipment handling'], serviceAreas: ['River Valley', 'Greenbank'], hourlyRate: 27, verified: true, rating: 4.8, completedJobs: 58, availability: 'Sample availability', availableDays: ['Saturday', 'Sunday'], experienceYears: 5, bio: 'Experienced in assisted paddy harvest and field equipment.' },
+];
+
+export const initialWorkerSettings: WorkerSettings = {
+    workerId: 'priya', serviceArea: 'Greenbank', hourlyRate: 25, availableDays: ['Saturday'],
+    skills: ['Paddy harvesting', 'Manual harvest', 'Field lead'],
+};
